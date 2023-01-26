@@ -156,95 +156,253 @@ button:focus {
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
-.top-navbar {
-  position: relative;
-  z-index: 10;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
-.top-navbar .navbar {
-  position: fixed;
+.header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.header .logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+.link-nav {
+  cursor: pointer;
+}
+
+.banner {
+  background-size: cover;
+  height: 100%;
   width: 100%;
-  transition: height 0.3s ease-out, background 0.3s ease-out,
-    box-shadow 0.3s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  z-index: 100;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: 2s ease;
 }
 
-.top-navbar .navbar-light .navbar-nav .nav-link {
-  color: #010101;
-  font-size: 18px;
-  padding: 0px 20px;
-  border-radius: 4px;
+.banner .glass-wrapper {
+  width: 30%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  background: #d0a772;
-  color: #ffffff;
-}
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
-  background: #d0a772;
-  color: #ffffff;
-  border-radius: 4px;
+.hero-title {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-top: 13rem;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu {
+.hero-title p {
+  font-size: 47px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: #fff;
+}
+
+.hero-title .country {
+  font-size: 85px;
+  letter-spacing: 3px;
+}
+
+.hero-title .details {
+  width: 60%;
+  padding-top: 1.5rem;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  padding-bottom: 2.5rem;
+}
+
+.hero-title .explore button {
+  background: rgba(189, 189, 189, 0.299);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: none;
-  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu a.dropdown-item:hover {
-  background: #d0a772;
-  color: #ffffff;
-}
-.navbar-light .navbar-toggler:hover {
-  background: #cfa671;
+.tourist-list {
+  bottom: 25px;
+  position: absolute;
+  left: 35rem;
 }
 
-/*------------------------------------------------------------------
-    Hero Section
--------------------------------------------------------------------*/
-#hero-section {
-  background-image: url(../images/cover-bulalo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.tourist-list p {
+  color: #fff;
+  padding-left: 20px;
+  margin-bottom: auto;
+  line-height: 24px;
+}
+
+.tourist-list ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  width: 65vw;
+  height: 15rem;
+  align-items: center;
+}
+
+.tourist-list .thumbnail {
+  display: flex;
+  height: 10rem;
+  width: 18rem;
+  background-size: contain !important;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.tourist-list .thumbnail .details {
+  margin-top: auto;
+  padding: 10px 0px;
+  background: rgba(38, 38, 38, 0.05);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.details .place-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.details .province {
+  font-weight: 300;
+}
+
+.tourist-list .active {
+  margin-top: -5rem;
+}
+
+@media (max-width: 1399.98px) {
+  .tourist-list {
+    bottom: 25px;
+    left: 30rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .tourist-list {
+    bottom: 50px;
+    left: 15rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .tourist-list {
+    bottom: 50px;
+    left: 20rem;
+  }
+  .tourist-list .thumbnail {
+    height: 8rem;
+    width: 13rem;
+  }
+  .header .logo {
+    letter-spacing: 3px;
+    font-size: 15px;
+  }
+  .header ul {
+    gap: 4rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .tourist-list .thumbnail {
+    height: 5rem;
+    width: 8rem;
+  }
+  .hero-title .details {
+    font-size: 0.75rem;
+    padding-left: 1rem;
+  }
+  .hero-title p {
+    padding-left: 1rem;
+  }
+  .hero-title .explore button {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .tourist-list {
+    bottom: 50px;
+    left: 17rem;
+  }
+  .tourist-list .thumbnail {
+    height: 3rem;
+    width: 5rem;
+  }
+  .details .place-name {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .header ul {
+    gap: 1rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+  }
+  .header .logo {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+  }
 }
 
 /*------------------------------------------------------------------
     About
 -------------------------------------------------------------------*/
 
-.about-section-box {
-  padding: 70px 0px;
+#about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../images/about1.jpg");
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.about-section-box .img-fluid {
-  box-shadow: -10px -10px 0px #212529;
-}
-.inner-column {
-}
-.inner-column h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  color: #010101;
-}
-.inner-column h1 span {
-  color: #d0a772;
-}
-.inner-column h4 {
-  font-size: 16px;
-  font-weight: 500;
-}
-.inner-column p {
-  font-size: 18px;
-}
-.inner-column .btn-outline-new-white {
-  color: #d0a772;
-}
-.inner-column .btn-outline-new-white:hover {
-  color: #ffffff;
+.about-info {
+  margin-top: 20%;
 }
 
+.about-info h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.about-info h1 {
+  font-size: 6rem;
+  color: #fff;
+}
 /*------------------------------------------------------------------
     Menu
 -------------------------------------------------------------------*/
@@ -798,138 +956,14 @@ button:focus {
 /*------------------------------------------------------------------
     Footer
 -------------------------------------------------------------------*/
-
-.footer-area {
-  padding-top: 50px;
-  padding-bottom: 0px;
-}
-.bg-f {
-  background-image: url("");
-  background-attachment: scroll;
-  background-clip: initial;
-  background-color: rgba(0, 0, 0, 0);
-  background-origin: initial;
-  background-position: center center;
+#footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../images/about-bulalo.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 5%;
   background-size: cover;
-  position: relative;
 }
-.bg-f::before {
-  background: #010101;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.8;
-}
-
-.footer-area .container {
-  position: relative;
-  z-index: 1;
-}
-.footer-area h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 24px;
-  border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
-  margin-bottom: 10px;
-}
-.footer-area p {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.footer-area p.lead {
-  font-size: 19px;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-.footer-area p.lead a {
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-.footer-area p.lead a:hover {
-  color: #d0a772;
-}
-.footer-area p a {
-  font-size: 18px;
-  color: #ffffff;
-}
-.footer-area p a:hover {
-  color: #d0a772;
-}
-
-.subscribe_form {
-  display: block;
-  text-align: center;
-  padding: 5px 0;
-}
-
-.subscribe_form .form_input {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  border: none;
-  font-size: 19px;
-  line-height: 50px;
-  padding: 0 10px;
-  float: left;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
-
-.subscribe_form .submit {
-  background-color: #d0a772;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 10px;
-  float: left;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.subscribe_form .submit:hover {
-  background: #010101;
-}
-
-.f-social {
-  padding-bottom: 10px;
-  margin: 0px;
-  margin-top: 20px;
-}
-.f-social li a {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.9);
-  margin-right: 10px;
-}
-
-.copyright {
-  margin-top: 20px;
-  position: relative;
-  display: block;
-  background-color: #010101;
-  border-top: 1px dashed rgba(207, 166, 113);
-  padding: 30px 0;
-  z-index: 1;
-}
-
-.copyright .company-name {
-  font-size: 16px;
-  text-align: center;
-}
-.copyright .company-name a {
-  font-size: 16px;
-}
-
 /*------------------------------------------------------------------
     All Pages
 -------------------------------------------------------------------*/
@@ -1523,10 +1557,10 @@ blockquote {
   font-size: 30px;
 }
 
-.map {
-  height: 60vh;
-  background-image: url("../images/eben-map.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }

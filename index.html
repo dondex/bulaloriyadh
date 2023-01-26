@@ -42,6 +42,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -51,91 +56,146 @@
 
   <body>
     <!-- Start header -->
-    <header class="top-navbar">
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
+    <header>
+      <div class="container-fluid w-100" style="height: 93vh">
+        <div class="header">
+          <div class="logo">
+            <!-- <img
+              src="./images/bulalo-logo.png"
+              style="width: 100%; height: 100px"
+              alt=""
+            /> -->
+            Bulalohan sa Riyadh
+          </div>
+          <ul
+            class="fw-bold link-nav"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="banner" style="background-image: url('./images/hero8.jpg')">
+          <div
+            class="glass-wrapper"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          ></div>
+        </div>
+        <div class="hero-title">
+          <p data-aos="fade-left" data-aos-delay="500" data-aos-duration="700">
             <img
-              style="width: 100%; height: 55px"
-              src="images/bulalo-logo.png"
+              style="width: 50px; height: 50px"
+              src="./images/bulalo-logo.png"
               alt=""
             />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbars-rs-food"
-            aria-controls="navbars-rs-food"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            Bulalohan
+          </p>
+          <p
+            class="country"
+            class="country"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="700"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbars-rs-food">
-            <ul class="navbar-nav ms-auto ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link text-light fs-6" href="index.html">Home</a>
-              </li>
-            </ul>
+            sa Riyadh
+          </p>
+          <div
+            class="details"
+            class="details"
+            data-aos="fade-left"
+            data-aos-delay="700"
+            data-aos-duration="700"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            repellendus voluptatum quod veritatis, quaerat expedita dicta nobis.
+            Perspiciatis doloribus voluptatem, magni natus iusto ex, fugiat
+            molestias, laudantium possimus dolores soluta.
+          </div>
+          <div
+            class="explore"
+            class="explore"
+            data-aos="fade-left"
+            data-aos-delay="800"
+            data-aos-duration="700"
+          >
+            <button>Order Now</button>
           </div>
         </div>
-      </nav>
+        <div class="tourist-list">
+          <ul class="place-list">
+            <li
+              class="active"
+              data-aos="fade-down"
+              data-aos-delay="600"
+              data-aos-duration="700"
+              data-img="./images/hero8.jpg"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('./images/hero8.jpg')"
+              >
+                <div class="details">
+                  <p class="province">Best</p>
+                  <p class="place-name">Bulalo</p>
+                </div>
+              </div>
+            </li>
+            <li
+              data-img="./images/hero5.jpg"
+              data-aos="fade-down"
+              data-aos-delay="750"
+              data-aos-duration="700"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('./images/hero5.jpg')"
+              >
+                <div class="details">
+                  <p class="province">Special</p>
+                  <p class="place-name">Lomi</p>
+                </div>
+              </div>
+            </li>
+            <li
+              data-img="./images/hero4.jpg"
+              data-aos="fade-down"
+              data-aos-delay="850"
+              data-aos-duration="700"
+            >
+              <div
+                class="thumbnail"
+                style="background: url('./images/hero4.jpg')"
+              >
+                <div class="details">
+                  <p class="province">All Time Favorite</p>
+                  <p class="place-name">Silog</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <!-- End header -->
 
-    <!-- Hero Section -->
-    <section id="hero-section" style="height: 85vh">
-      <div class="container-fluid">
+    <!-- Start About -->
+    <section id="about" class="p-0 m-0">
+      <div class="container" style="height: 80vh">
         <div class="row">
-          <h1>Bulalo sa Riyadh</h1>
+          <div
+            class="col-12 text-center about-info animate__animated animate__fadeInDown"
+          >
+            <h3 class="fw-bold">Welcome to</h3>
+            <h1 class="fw-bold">Bulalohan sa Riyadh</h1>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- End of Hero Section -->
-
-    <!-- Start About -->
-    <div class="about-section-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="inner-column text-left">
-              <h1 class="fw-bold my-3">Bulalohan sa Riyadh</h1>
-              <h4>Lutong Pinoy, The Best Bulalo in Town</h4>
-              <p>
-                Offers: *Eat all you can with free Coffee & Tea. *Short Orders
-                available *Delivery & Catering
-              </p>
-              <div class="inner-pt">
-                <h1 class="fw-bold">History</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem illo laborum consequuntur! Dolores quas laborum
-                  enim rem molestiae maxime ipsa facere voluptatum possimus
-                  explicabo. Expedita.
-                </p>
-              </div>
-              <div class="inner-pt">
-                <h1 class="fw-bold">Mission</h1>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Repellendus officiis id eaque nihil corporis dolorum!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <img
-              style="height: 500px; width: 600px"
-              src="images/about1.jpg"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- End About -->
 
     <!-- Start Menu -->
@@ -161,7 +221,6 @@
                 <button data-filter=".friday">Friday</button>
                 <button data-filter=".saturday">Saturday</button>
                 <button data-filter=".sunday">Sunday</button>
-                <button data-filter=".extra">Extra</button>
               </div>
             </div>
           </div>
@@ -476,392 +535,163 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 special-grid extra">
-            <div class="product-item">
-              <div class="product-thumb">
-                <a href="shop-single-product.html">
-                  <img
-                    src="https://panlasangpinoy.com/wp-content/uploads/2018/03/Lumpiang-Sariwa-with-Fresh-Lumpia-Wrapper-500x473.jpg"
-                    alt=""
-                  />
-                </a>
-                <div class="product-action">
-                  <a
-                    class="action-wishlist"
-                    href="shop-wishlist.html"
-                    title="Wishlist"
-                  >
-                    <i class="fa-solid fa-heart-circle-check"></i>
-                  </a>
-                  <a class="action-quick-view" href="" title="Quick View">
-                    <i class="fa-solid fa-eye"></i>
-                  </a>
-                  <a class="action-cart" href="#/">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="product-info">
-                <h4 class="title"><a href="">Lumpiang Sariwa</a></h4>
-                <div class="prices">
-                  <span class="price">13sar (330ml)</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
     <!-- End Menu -->
 
-    <!-- Video -->
-    <div class="container">
-      <div class="row my-5">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <video width="100%" height="500" controls>
-            <source src="./images/bulalo-video.mp4" type="video/mp4" />
-          </video>
+    <!-- Start Footer -->
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-lg-start bg-light">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span class="text-white"
+            >Get connected with us on social networks:</span
+          >
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
-          <div class="inner-column text-center">
-            <h1 class="fw-bold my-3">Bulalohan sa Riyadh</h1>
-            <h4>Lutong Pinoy, The Best Bulalo in Town</h4>
-            <p>
-              Offers: *Eat all you can with free Coffee & Tea. *Short Orders
-              available *Delivery & Catering
-            </p>
-            <div class="inner-pt">
-              <h1 class="fw-bold">Happy Moments</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem illo laborum consequuntur! Dolores quas laborum
-                enim rem molestiae maxime ipsa facere voluptatum possimus
-                explicabo. Expedita.
-              </p>
-            </div>
-          </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="text-white">
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-      </div>
-    </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
 
-    <!-- Start Customer Reviews -->
-    <div class="customer-reviews-box" style="background-color: #e4e6ea">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="heading-title text-center inner-column">
-              <h1><span>Bulalohan Customer Feedback</span></h1>
-              <h4>The Best Filipino Food</h4>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel wrapper -->
-        <div
-          id="carouselMultiItemExample"
-          class="carousel slide carousel-dark text-center"
-          data-mdb-ride="carousel"
-        >
-          <!-- Controls -->
-          <div class="d-flex justify-content-center mb-4">
-            <button
-              class="carousel-control-prev"
-              href="#reviews"
-              role="button"
-              data-slide="prev"
-              type="button"
-              data-mdb-target="#carouselMultiItemExample"
-              data-mdb-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              href="#reviews"
-              role="button"
-              data-slide="next"
-              type="button"
-              data-mdb-target="#carouselMultiItemExample"
-              data-mdb-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- Inner -->
-          <div id="reviews" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner py-4">
-              <!-- Single item -->
-              <div class="carousel-item active">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client1.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Longtable by request created not as a glittering
-                        showpiece of authentic Cape, but as a place where
-                        unpretentious, flavoursome food could be enjoyed and
-                        satisfied at the most acceptable rate.
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client2.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Those laughter speaks volume🍜 <br />
-                        #food2smilEE
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client3.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">Lov-EE-Ly Night ♥️</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Single item -->
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client4.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Chinese eating Japanese again and again and again..
-                        <br />
-                        #loyalcustomers
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client5.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Happy tummy! Happy fam-EE-ly! <br />
-                        Budget Fri-EE-ndly @ ee
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client6.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        All-Time best comfort food! #postduty
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Single item -->
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client7.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Good food tastes better when shared with good friends..
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client8.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Food tastes better when you eat with your Fam-EE-ly!
-                        <br />
-                        #longtabledinner
-                      </p>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                      <img
-                        class="rounded-circle shadow-1-strong mb-4"
-                        src="./images/client9.jpg"
-                        alt="avatar"
-                        style="width: 150px; height: 150px"
-                      />
-
-                      <p class="text-muted">
-                        Happiness is fam-EE-ly thats eats together!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Inner -->
-        </div>
-        <!-- Carousel wrapper -->
-      </div>
-    </div>
-    <!-- End Customer Reviews -->
-
-    <!-- Start Contact info -->
-    <div class="contact-imfo-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <i class="fa fa-volume-control-phone"></i>
-            <div class="overflow-hidden">
-              <h4>Phone</h4>
-              <p class="lead">+966 56 966 3285</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <i class="fa fa-envelope"></i>
-            <div class="overflow-hidden">
-              <h4>Email</h4>
-              <p class="lead">bulalohan@yahoo.com</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <i class="fa fa-map-marker"></i>
-            <div class="overflow-hidden">
-              <h4>Location</h4>
-              <p class="lead">
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4 text-white">
+                <i class="fas fa-gem me-3 text-white"></i>Bulalohan sa Riyadh
+              </h6>
+              <p class="text-white">
                 Bulalohan sa Riyadh, Sulimaniya area near Military hospital ,
                 Riyadh, Saudi Arabia
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Contact info -->
-
-    <!-- Start Footer -->
-    <footer class="footer-area bg-f">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <h3>Location</h3>
-            <p>
-              Bulalohan sa Riyadh, Sulimaniya area near Military hospital ,
-              Riyadh, Saudi Arabia
-            </p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3>Opening hours</h3>
-            <p>
-              <span class="text-color">Sun - Mon : </span> 10:30 AM - 11:30 PM
-            </p>
-            <p><span class="text-color">Tuesday :</span> 10:30 AM - 11:30 PM</p>
-            <p>
-              <span class="text-color">Wed - Thurs :</span> 10:30 AM - 11:30 PM
-            </p>
-            <p><span class="text-color">Fri & Sat :</span>4:00 PM - 11:30 PM</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3>Contact information</h3>
-            <p class="lead">Bulalohan sa Riyadh</p>
-            <!-- <p class="lead"><a href="#!">CR #: 1010670407</a></p>
-            <p class="lead"><a href="#!">Tax #: 310879721200003</a></p> -->
-            <p><a href="#">bulalohan@gmail.com</a></p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3>Inquiry / Orders</h3>
-            <div class="subscribe_form">
-              <form class="subscribe_form">
-                <h3>Whatsapp</h3>
-                <button type="submit" class="submit">
-                  <a href=""> Message Us</a>
-                </button>
-                <div class="clearfix"></div>
-              </form>
-            </div>
-            <ul class="list-inline f-social">
-              <li class="list-inline-item">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <p class="company-name">
-                All Rights Reserved.<a href="#">Bulalohan sa Riyadh</a>
-                Powered By :
-                <a href="">Hoopelink</a>
+              <p class="text-white">
+                <i class="fas fa-envelope me-3 text-white"></i>
+                bulalohan@yahoo.com
+              </p>
+              <p class="text-white">
+                <i class="fas fa-phone me-3 text-white"></i>+966 56 966 3285
               </p>
             </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-white">
+                Latest News
+              </h6>
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero6.jpg" alt="" />
+                </div>
+                <div class="col-6">
+                  <p class="text-start text-white" style="font-size: 10px">
+                    Try our delicious Sisig dto lang sa bulalohan sa Riyadh
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero7.jpg" alt="" />
+                </div>
+                <div class="col-6">
+                  <p class="text-start text-white" style="font-size: 10px">
+                    Try our delicious Tapsi in the House dito lang sa bulalohan
+                    sa Riyadh
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-white">
+                Information
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Menu</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-white">Facebook</h6>
+              <div class="row my-1">
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero1.jpg" alt="" />
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero2.jpg" alt="" />
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="./images/hero4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
           </div>
+          <!-- Grid row -->
         </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4 text-white"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        Powered By:
+        <a class="text-reset fw-bold" href="">Hoopoelink HPL</a>
       </div>
+      <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <!-- End Footer -->
 
     <a href="#" id="back-to-top" title="Back to top" style="display: none"
@@ -887,5 +717,25 @@
     <!-- <script src="js/contact-form-script.js"></script> -->
 
     <script src="./js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      let places = document.querySelectorAll(".place-list li");
+      let active = "/assets/img/mayon/mayon-1.webp";
+
+      places.forEach((e) => {
+        e.addEventListener("mouseenter", (event) => {
+          places.forEach((e) => {
+            e.classList.remove("active");
+          });
+
+          event.target.classList.add("active");
+          active = event.target.getAttribute("data-img");
+          let banner = document.querySelector(".banner");
+          banner.style.backgroundImage = `url('${active}')`;
+        });
+      });
+    </script>
   </body>
 </html>
