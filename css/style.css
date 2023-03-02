@@ -1503,5 +1503,7 @@ body {
 
 .img-size {
   height: 230px;
-  width: 300px;
+  /* max-width: 300px; */
+  object-fit:cover;
 }
+
