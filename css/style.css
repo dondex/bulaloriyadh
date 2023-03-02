@@ -1514,6 +1514,10 @@ body {
   color: #ae7732;
 }
 
+.text-description-color {
+  color: #ae7732;
+}
+
 .text-theme-color:hover {
   color: #cfb697 !important;
 }
