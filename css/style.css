@@ -861,6 +861,10 @@ button:focus {
 .bg-color-blue {
   background-color: #194baa;
 }
+
+.bg-color-theme {
+  background-color: #ae7732;
+}
 /*------------------------------------------------------------------
     All Pages
 -------------------------------------------------------------------*/
@@ -1500,10 +1504,24 @@ body {
   color: #fff;
 }
 
-
 .img-size {
   height: 230px;
   /* max-width: 300px; */
   object-fit:cover;
 }
 
+.text-theme-color {
+  color: #ae7732;
+}
+
+.text-theme-color:hover {
+  color: #cfb697 !important;
+}
+
+.carousel-indicators {
+  top: 400px !important;
+}
+
+.nabar-theme {
+  background-color: #fcfbfa;
+}

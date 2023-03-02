@@ -14,6 +14,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
@@ -37,8 +38,8 @@
 </head>
 <body style="overflow: visible; background-color: #d3d1d145;">
   <header>
-    <div style="height: 100vh"> <!-- class="w-100" style="height: 93vh"-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg nabar-theme py-0 fixed-top">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img class="img-fluid logo" src="./images/logo_3.png" alt=""/>
@@ -49,79 +50,72 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto my-2 mb-lg-0">
               <li class="nav-item">
-                <a class="btn btn-light mx-3 btn-lg" href="./index.html" type="submit">Home</a>
+                <a class="btn btn-link text-black mx-2 btn-lg" href="./index.html" type="submit">Home</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-light mx-3 btn-lg" href="#" type="submit">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-light mx-3 btn-lg" href="./menu.html" type="submit">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-light mx-3 btn-lg" href="#" type="submit">Contact</a>
+                <a class="btn btn-link text-black mx-2 btn-lg" href="./menu.html" type="submit">Menu</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="banner" style="background-image: url('./images/hero8-bulalo.png')">
-        <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="800"></div>
-      </div>
-      <div class="hero-title text-center">
-        <p class="display-1" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700">
-          Our Daily Menus
-        </p>
-      </div>
     </div>
   </header>
-  
-  <!-- Start Menu -->
-  <div class="container">
-    <div class="row col-sm-12 col-md-1 col-lg-1 mb-1 mt-4">
-      <a href="./menu.html" class="btn btn-light btn-sm">Back</a>
+  <section>
+    <div class="pt-5 px-5 mt-5">
+      <img style="height: 50vh; object-fit: cover; width:100%;" class="rounded img-fluid shadow"  src="./images/hero8-bulalo.png" alt="bulalo" />
     </div>
-    <div class="row mx-auto">
-      <div class="col-md-3 my-md-4">
-          <div class="card w-100 shadow-sm border-0 hvr-grow" style="width: 18rem;">
-              <img src="https://www.lutongpinoyrecipe.com/wp-content/uploads/2021/02/lutong-pinoy-halo-halo-3-1200x1200.jpg" 
-              class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Halo halo">
-              <div class="card-body text-center">
-                <h5 class="card-title">Halo halo</h5>
-                <h6 class="card-subtitle text-muted"></h6>
-                <p class="card-text">18 sr</p>
-              </div>
-          </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row justify-content-start mt-5">
+        <div class="col-auto">
+          <a href="./menu.html" class="btn theme-button btn-sm mt-2" type="button">Go Back</a>
+        </div>
       </div>
-      <div class="col-md-3 my-md-4">
-          <div class="card w-100 shadow-sm border-0 hvr-grow" style="width: 18rem;">
-              <img src="https://www.happytummyrecipes.com/wp-content/uploads/2021/06/buko-pandan-500x500.jpg"
-              class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Buko Pandan"/>
-              <div class="card-body text-center">
-                <h5 class="card-title">Buko Pandan</h5>
-                <h6 class="card-subtitle text-muted"></h6>
-                <p class="card-text">9 sr</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-3 my-md-4">
-          <div class="card w-100 shadow-sm border-0 hvr-grow">
-              <img src="https://i.ytimg.com/vi/SeQUB1zUVj4/maxresdefault.jpg"
-                class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Leche plan"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title">Leche plan</h5>
+      <div class="row mx-auto">
+        <h1 class="pb-2 border-bottom text-center text-theme-color text-uppercase">Desserts</h1>
+        <div class="col-md-3 my-md-4">
+            <div class="card w-100 shadow-sm border-0 hvr-grow" style="width: 18rem;">
+                <img src="https://www.lutongpinoyrecipe.com/wp-content/uploads/2021/02/lutong-pinoy-halo-halo-3-1200x1200.jpg" 
+                class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Halo halo">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Halo halo</h5>
                   <h6 class="card-subtitle text-muted"></h6>
-                  <p class="card-text">20 sr</p>
-              </div>
-          </div>
+                  <p class="card-text">18 sr</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 my-md-4">
+            <div class="card w-100 shadow-sm border-0 hvr-grow" style="width: 18rem;">
+                <img src="https://www.happytummyrecipes.com/wp-content/uploads/2021/06/buko-pandan-500x500.jpg"
+                class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Buko Pandan"/>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Buko Pandan</h5>
+                  <h6 class="card-subtitle text-muted"></h6>
+                  <p class="card-text">9 sr</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 my-md-4">
+            <div class="card w-100 shadow-sm border-0 hvr-grow">
+                <img src="https://i.ytimg.com/vi/SeQUB1zUVj4/maxresdefault.jpg"
+                  class="img-thumbnail rounded-3 m-2 border-0 img-fluid img-size" alt="Leche plan"/>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Leche plan</h5>
+                    <h6 class="card-subtitle text-muted"></h6>
+                    <p class="card-text">20 sr</p>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End Menu -->
-  
-  <footer class="text-center text-white mt-5 bg-color-blue">
-    <!-- Copyright -->
-    <div  class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      Powered By :<a class="text-white" href="">Yaramay</a>
+  </section>
+  <footer class="text-center text-white mt-5 bg-color-theme">
+    <div class="container">
+      <div  class="text-center text-white p-3">
+        Powered By :<a class="text-white">Yaramay</a>
+      </div>
     </div>
   </footer>
   

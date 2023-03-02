@@ -27,6 +27,7 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
@@ -47,10 +48,9 @@
   </head>
 
   <body>
-    <!-- Start header -->
     <header>
-      <div style="height: 93vh">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg nabar-theme py-0 fixed-top">
           <div class="container">
             <a class="navbar-brand" href="./index.html">
               <img class="img-fluid logo" src="./images/logo_3.png" alt=""/>
@@ -61,104 +61,179 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto my-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="btn btn-light mx-3 btn-lg" href="./index.html" type="submit">Home</a>
+                  <a class="btn btn-link text-black mx-2 btn-lg" href="./index.html" type="submit">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-light mx-3 btn-lg" href="./aboutus.html" type="submit">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-light mx-3 btn-lg" href="./menu.html" type="submit">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-light mx-3 btn-lg" href="./contactus.html" type="submit">Contact</a>
+                  <a class="btn btn-link text-black mx-2 btn-lg" href="./menu.html" type="submit">Menu</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-        <div class="banner" style="background-image: url('./images/hero8-bulalo.png')">
-          <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="800"></div>
-        </div>
-        <div class="hero-title">
-          <p class="country" class="country" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700">
-            Bulalohan
-          </p>
-          <p class="country" class="country" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700">
-            sa
-          </p>
-          <p class="country" class="country" data-aos="fade-left" data-aos-delay="600" data-aos-duration="700">
-            Riyadh
-          </p>
-          <div class="explore" class="explore" data-aos="fade-left" data-aos-delay="800" data-aos-duration="700">
-            <a class="btn btn-light mx-3 btn-lg" href="./menu.html" type="submit">Order Now</a>
+      </div>
+      <section class="py-5" style="margin-top: 21px;">
+        <div id="carouselExampleIndicators" style="height: 50vh;" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://myareanetwork-photos.s3.amazonaws.com/editorphotos/f/22880_1503583601.jpg" style="height: 55vh; object-fit: cover; width:100%;" class="d-block w-100 img-fluid" alt="Buffet Eat All you can">
+            </div>
+            <div class="carousel-item">
+              <img src="https://bxtraoutlet.delivery/wp-content/uploads/2021/03/small.jpg" style="height: 55vh; object-fit: cover; width:100%;" class="d-block w-100 img-fluid" alt="Special Bilao">
+            </div>
+            <div class="carousel-item">
+              <img src="http://images.summitmedia-digital.com/yummyph/images/2021/07/08/beefteriyakirecipe2.jpg" style="height: 55vh; object-fit: cover; width:100%;" class="d-block w-100 img-fluid" alt="Beef Teriyaki">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="tourist-list">
-          <ul class="place-list">
-            <li class="active"
-              data-aos="fade-down"
-              data-aos-delay="600"
-              data-aos-duration="700"
-              data-img="./images/hero8-bulalo.png">
-              <div class="thumbnail" style="background: url('./images/hero8-bulalo.png')">
-                <div class="details">
-                  <p class="province">Best</p>
-                  <p class="place-name">Bulalo</p>
-                </div>
-              </div>
-            </li>
-            <li data-img="./images/hero5-lomi.png"
-              data-aos="fade-down"
-              data-aos-delay="750"
-              data-aos-duration="700">
-              <div class="thumbnail"
-                style="background: url('./images/hero5-lomi.png')">
-                <div class="details">
-                  <p class="province">Special</p>
-                  <p class="place-name">Lomi</p>
-                </div>
-              </div>
-            </li>
-            <li data-img="./images/hero4-bangsilog.png"
-              data-aos="fade-down"
-              data-aos-delay="850"
-              data-aos-duration="700">
-              <div class="thumbnail"
-                style="background: url('./images/hero4-bangsilog.png')">
-                <div class="details">
-                  <p class="province">All Time Favorite</p>
-                  <p class="place-name">Silog</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+      </section>
+    </header> 
+    <main>
+      <div class="p-5">
+          <h1 class="pb-2 pt-3 display-4 text-theme-color text-center">Our Best Sellers</h1>
+          <div class="row justify-content-start mt-3">
+            <div class="col-12 col-md-3">
+              <img src="./images/hero8-bulalo.png" class="img-fluid border-0 rounded-3 shadow" alt="Bulalo">
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./images/hero5-lomi.png" class="img-fluid border-0 rounded-3 shadow" alt="Lomi">
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./images/hero7-no-logo-and-price.png" class="img-fluid border-0 rounded-3 shadow" alt="Silog">
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="./images/hero1-no-logo.png" class="img-fluid border-0 rounded-3 shadow" alt="Silog">
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-auto">
+              <a href="./menu.html" class="btn theme-button btn-sm mt-2" type="button">VIEW MENU</a>
+            </div>
+          </div>
+      </div>
+    </main>
+    <section class="py-5" style="background-color: #edc9b540;">
+      <div class="row justify-content-center px-0 px-md-5 mt-5">
+        <div class="offset-md-1 col-md-7 col-sm-11">
+          <h1 class="display-4 text-theme-color">Brief History</h1>
+            <p class="lead mt-1 mb-2"><strong>Bulalohan sa Riyadh</strong> started in August 2019 at the Sulimaniya area. Our aim is to bring our Filipino concept of restaurant here in Saudi Arabia, where you can enjoy all out cultural food as well as some Asian dishes. </p>
+          
+          <h2 class="text-theme-color mt-2">For our services, we offer:</h2> 
+          <p class="mb-0">Eat all you can (Buffet)</p>
+          <p class="mb-0">Ala Carte (short Orders)</p>
+          <p class="mb-0">Catering Service</p>
+          <p class="mb-0">Delivery service</p>
+        </div>
+        <div class="col-auto d-none d-md-block">
+          <video class="shadow-sm rounded-3" width="300px" height="100%" controls>
+            <source src="./videos/bulalo-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
-    </header>
+      <div class="row justify-content-center px-md-5 mt-5">
+        <div class="col-auto d-none d-md-block">
+          <video class="shadow-sm rounded-3" width="100%" height="100%" controls>
+            <source src="./videos/vip_room.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-7">
+          <h1 class="text-theme-color display-4">VIP Room</h1>
+          <h2>For entertainment we offer:</h2> 
+          <ul class="list-group">
 
-    <!-- Start About -->
-    <section id="about" class="p-0 m-0">
-      <div class="container" style="height: 80vh">
+          </ul>
+          <p class="lh-lg">Sing along karaoke everyday open for everybody <br />
+            Live Band <br/>
+            Tawag ng Bulalohan Singing contest <br/>
+            Stand-up Comedy <br/>
+            Acoustic Band <br/>
+            Solo performers We are encouraging all our beloved customers to write down their comments on our comment card to help us improve in every aspect for customer satisfaction. We put our trust in God, who helps us in achieving all our goals.<br />
+          </p>
+          
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container pt-1">
+        <div class="section-title mt-5">
+            <h1 class="text-theme-color display-4">Contact</h1>
+            <p>Do not hesitate to reach our experienced IT experts should you have any further inquiries or concerns.</p>
+        </div>
         <div class="row">
-          <div
-            class="col-12 text-center about-info animate__animated animate__fadeInDown"
-          >
-            <h3 class="fw-bold">Welcome to</h3>
-            <h1 class="fw-bold">Bulalohan sa Riyadh</h1>
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <h4>Location:</h4>
+                <p>bulalohan sa riyadh, Sulimaniya area near Military hospital , Riyadh, Saudi Arabia</p>
+              </div>
+                <div class="email">
+                  <h4>Email:</h4>
+                  <p>ronald4riyadhpizzeria@yahoo.com</p>
+                </div>
+                <div class="phone">
+                  <h4>Contact:</h4>
+                  <p> 
+                    <ul>
+                      <li>0569663285</li>
+                      <li>0570769407</li>
+                    </ul>
+                  </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.6595737908174!2d46.655895798142666!3d24.738564914037966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee379e77986bd%3A0x9e2d2a7f9be958b9!2sAmerah%20Hub!5e0!3m2!1sen!2ssa!4v1673612806300!5m2!1sen!2ssa" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> 
+            </div>
+          </div>
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                      <label for="name">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- End About -->
-
-    <footer class="text-center text-white mt-5 bg-color-blue fixed-bottom">
-      <!-- Copyright -->
-      <div  class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Powered By :<a class="text-white" href="">Yaramay</a>
+    <footer class="text-center text-white mt-5 bg-color-theme">
+      <div class="container">
+        <div  class="text-center text-white p-3">
+          Powered By :<a class="text-white">Yaramay</a>
+        </div>
       </div>
   </footer>
 
-    <a href="#" id="back-to-top" title="Back to top" style="display: none">&uarr;</a>
+  <a href="#" id="back-to-top" title="Back to top" style="display: none">&uarr;</a>
 
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
