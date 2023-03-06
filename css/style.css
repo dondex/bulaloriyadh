@@ -1523,9 +1523,29 @@ body {
 }
 
 .carousel-indicators {
-  top: 460px !important;
+  top: 340px !important;
 }
 
 .nabar-theme {
   background-color: #fcfbfa;
+}
+
+.bg-img-1 {
+  background-image: url(../images/cover-bulalo.jpg);
+}
+
+.bg-img-2 {
+  background-image: url(../images/about2.jpg);
+}
+
+.bg-img-3 {
+  background-image: url(../images/about-bulalo.jpg);
+}
+
+.carousel-image {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
 }
