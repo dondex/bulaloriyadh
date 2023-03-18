@@ -697,6 +697,10 @@ button:focus {
   margin-right: 2px;
 }
 
+.nav-item :hover {
+  color: #ae7732 !important;
+}
+
 /***  Video ***/
 #video {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
@@ -741,10 +745,12 @@ button:focus {
   height: 135px;
 }
 .carousel-control-prev {
-  left: -100px;
+  /* left: -100px; */
+  left: 0px;
 }
 .carousel-control-next {
-  right: -100px;
+  /* right: -100px; */
+  right: 0px;
 }
 .carousel-indicators {
   top: 320px;
@@ -766,7 +772,7 @@ button:focus {
     right: -5px;
   }
   .carousel-indicators {
-    top: 400px;
+    top: 300px !important;
   }
 }
 
@@ -1504,6 +1510,26 @@ body {
   color: #fff;
 }
 
+.bookNow {
+  background-color: #d0a772;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 10px;
+  float: left;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.bookNow :hover {
+  background: #010101;
+  color: #fff;
+}
+
 .img-size {
   height: 230px;
   /* max-width: 300px; */
@@ -1523,7 +1549,7 @@ body {
 }
 
 .carousel-indicators {
-  top: 340px !important;
+  top: 450px;
 }
 
 .nabar-theme {
