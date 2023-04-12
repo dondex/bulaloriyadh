@@ -1553,7 +1553,18 @@ body {
 }
 
 .nabar-theme {
+  background-color: #fcfbfa00;
+  box-shadow: #1f1f1f 3px;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+.navbar-scrolled {
   background-color: #fcfbfa;
+  box-shadow: 0 3px 10px rgba(116, 116, 116, 0.15);
+  color: #000;
 }
 
 .bg-img-1 {
