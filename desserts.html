@@ -220,5 +220,22 @@
         });
       });
   </script>
+    <script>
+      const navEl = document.querySelector('.navbar');
+      const navTxtScroll = document.querySelector('.btn-link');
+      const navTxtNotScroll = document.querySelector('.btn-link');
+  
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56) {
+          navEl.classList.add('navbar-scrolled');
+         // navTxtNotScroll.classList.remove('text-white');
+         // navTxtScroll.classList.add('text-black');
+        } else if (window.scrollY < 56) {
+          navEl.classList.remove('navbar-scrolled');
+          //navTxtNotScroll.classList.add('text-white');
+          //navTxtEl.classList.remove('text-black');
+        }
+      });
+    </script>
 </body>
 </html>
