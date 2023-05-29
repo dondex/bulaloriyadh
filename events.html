@@ -97,21 +97,34 @@
                     <h2 class="text-description-color mt-3 pb-0">Dynamix Band</h2> 
                     <p class="mb-2">Thursday Night 8:00 P.M.</p>
                 </div>
-            </div>
+              </div>
               <div class="col-12 col-md-3">
                 <img src="./images/Event_Ganda_Gabi_Dave.png" class="img-fluid border-0 rounded-3 shadow" alt="Ganda Gabi ">
                 <div class="text-center">
                     <h2 class="text-description-color mt-3 pb-0">Ganda Gabi Dave</h2> 
                     <p class="mb-2">Friday Night 8:00 P.M.</p>
                 </div>
-            </div>
+              </div>
               <div class="col-12 col-md-3">
                 <img src="./images/Event_Acoustic.png" class="img-fluid border-0 rounded-3 shadow" alt="Acoustic Night">
                 <div class="text-center">
                     <h2 class="text-description-color mt-3 pb-0">Acoustic Night</h2> 
                     <p class="mb-2">Saturday Night 8:00 P.M.</p>
                 </div>
+              </div>
             </div>
+        </div>
+      </main>
+      <main style="background-color: #edc9b540;">
+        <div class="p-5 text-center">
+            <h1 class="pb-2 display-4 text-description-color text-center">Our Short Story</h1>
+            <div class="row justify-content-center justify-content-md-center mt-3">
+              <div class="col-12 col-md-3 p-1">
+                <img src="./images/bulalo-image-1.jpg" class="img-fluid img-thumbnail border-0 rounded-3 shadow gallery-image" alt="Customer">
+              </div>
+              <div class="col-12 col-md-3 p-1">
+                <video src="./videos/bulalo-video-1.mp4" class="img-fluid img-thumbnail border-0 rounded-3 shadow gallery-video" style="height: 150px;" muted></video>
+              </div>
             </div>
         </div>
       </main>
@@ -177,9 +190,40 @@
           </div>
         </div>
     </footer>
-  </div>
-    
+    </div>
 
+    <!-- Modal for Image -->
+    <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./images/bulalo-image-1.jpg" class="modal-img" alt="Modal Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Video -->
+    <div class="modal fade" id="gallery-popup-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-auto d-md-block">
+              <video src="./videos/bulalo-video-1.mp4" class="modal-video" width="100%" muted autoplay controls></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   <a href="#" id="back-to-top" title="Back to top" style="display: none">&uarr;</a>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -309,6 +353,27 @@
         //navTxtEl.classList.remove('text-black');
       }
     });
+  </script>
+
+  <script type="text/javascript">
+      document.addEventListener("click",function (e){
+        if(e.target.classList.contains("gallery-image")){
+            const src = e.target.getAttribute("src");
+            document.querySelector(".modal-img").src = src;
+            const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+            myModal.show();
+        }
+      })
+  </script>
+    <script type="text/javascript">
+      document.addEventListener("click",function (e){
+        if(e.target.classList.contains("gallery-video")){
+            const src = e.target.getAttribute("src");
+            document.querySelector(".modal-video").src = src;
+            const myModal = new bootstrap.Modal(document.getElementById('gallery-popup-video'));
+            myModal.show();
+        }
+      })
   </script>
 </body>
 </html>
